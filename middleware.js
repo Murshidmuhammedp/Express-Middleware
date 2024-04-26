@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000
-const token=require("../Express middleware/middleware/token")
+const token = require("../Express middleware/middleware/token");
+const validation = require("../Express middleware/middleware/validation");
 
 const middleware = [token, validation]
 
